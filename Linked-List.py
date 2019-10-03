@@ -1,35 +1,6 @@
-# Quiz 2 - Coding Part
-# March 28th, 2019
 # Author: Jessica Strait
-# This code was completed independently with guidance from the following sources:
-# Review of Lab9
-#######################
+# This project implements a linked list.
 
-
-# QUESTION 1
-def power(x, n):
-    # Write your code here
-    # First I will check to see if both inputs are integers. If they are not, I'll return error.
-    if type(x) is not int:
-        return 'error'
-    elif type(n) is not int:
-        return 'error'
-    else:
-        # If n is negative, we will also return error.
-        if n < 0:
-            return 'error'
-        # If n is exactly zero, we will return one.
-        if n == 0:
-            return 1
-        # If n is exactly one, we return x.
-        if n == 1:
-            return x
-        # Otherwise, we will use a recursive call to multiply x times the power function of x to the next smaller power.
-        else:
-            return x * power(x, n-1)
-
-
-# QUESTION 2
 class Node:
     def __init__(self, value):
         self.value = value  
