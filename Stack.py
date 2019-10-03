@@ -1,14 +1,5 @@
-#Lab #10
-#Due Date: 03/15/2019, 11:59PM
-########################################
-#                                      
-# Name: Jessica Strait
-# Collaboration Statement:             
-# This code was completed independently with guidance from the following sources:
-# The video lecture "Stack and Queue"
-# Several supplemental doctests created independently
-# Review of Lab 9 methods and relevant recitation notes
-########################################
+# Author: Jessica Strait
+# This project implements the stack operation.
 
 class Node:
     def __init__(self, value):
