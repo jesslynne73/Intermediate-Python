@@ -1,14 +1,5 @@
-#Lab #12
-#Due Date: 03/22/2019, 11:59PM
-########################################
-#                                      
-# Name: Jessica Strait
-# Collaboration Statement:             
-# This code was completed independently with guidance from the following sources:
-# The video lectures about binary heaps
-# Assistance from TA Lawrence Lee during recitation
-########################################
-
+# Author: Jessica Strait
+# This project implements the concept of a maximum priority binary heap through a linked list.
 
 class MaxHeapPriorityQueue:
 
