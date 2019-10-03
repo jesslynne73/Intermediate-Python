@@ -1,14 +1,5 @@
-#Lab #11
-#Due Date: 03/15/2019, 11:59PM
-########################################
-#                                      
-# Name: Jessica Strait
-# Collaboration Statement:             
-# This code was completed independently with guidance from the following sources:
-# The video lecture "Stack and Queue"
-# Review of Labs 9 & 10 and relevant recitation notes
-########################################
-
+# Author: Jessica Strait
+# This project implements the queue operations.
 
 class Node:
 
