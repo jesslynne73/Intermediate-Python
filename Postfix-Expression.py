@@ -1,23 +1,14 @@
-#HW 4
-#Due Date: 04/01/2019, 11:59PM
-########################################
-#
-# Name: Jessica Strait
-# Collaboration Statement:
-# This assignment was completed independently with guidance from the following sources:
-# The HW 3 pseudocode solution on Canvas
-# Previously created code for HW 3 and Lab 10
-# Review of the class lectures about postfix notation
-# https://www.tutorialspoint.com/python/python_tuples.htm for information on multiple values returned from a function
-# https://www.pythonforbeginners.com/dictionary/how-to-use-dictionaries-in-python/ for a dictionary review
+# Author: Jessica Strait
+# This project incorporates several functions associated with a provided expression as a string.
+# findNextOpr returns the leftmost operator in a string.
+# isNumber tells if a character is numeric.
+# getNextNumber takes a string and a position in that string to determine the next number after that position.
+# postfix turns an expression into a postfix expression.
 ########################################
 
-
-# Here is my fixed code from HW 3.
 def findNextOpr(txt):
     if not isinstance(txt,str) or len(txt) <= 0:
         return "error: findNextOpr"
-    # --- YOUR CODE STARTS HERE
     # Let's begin by setting parameters what the input must be, a non-empty string.
     if type(txt) == str and txt is not None:
         # I will create a list of operators.
@@ -38,7 +29,6 @@ def findNextOpr(txt):
 def isNumber(txt):
     if not isinstance(txt, str) or len(txt) == 0:
         return "error: isNumber"
-    # --- YOU CODE STARTS HERE
     # Again, let's stipulate what the input must be.
     if type(txt) == str and txt is not None:
         # If we can turn the string into a float, then it must be a number!
@@ -55,7 +45,6 @@ def isNumber(txt):
 def getNextNumber(expr, pos):
     if not isinstance(expr, str) or not isinstance(pos, int) or len(expr) == 0 or pos < 0 or pos >= len(expr):
         return None, None, "error: getNextNumber"
-    # --- YOU CODE STARTS HERE
     # One last time, let's make sure that the input it a non-empty string.
     if type(expr) == str and expr is not None:
         # This time, we also need to ensure that that the position is a non-negative integer.
@@ -209,9 +198,6 @@ class Stack:
             del temp
             # Now, I return the variable that I saved for later.
             return return_value
-
-# Now, we will write new code to actually complete HW 4.
-
 
 def postfix(expr):
     # First, we'll instantiate class Stack from Lab 10.
