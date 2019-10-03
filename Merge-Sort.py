@@ -1,16 +1,7 @@
-#LAB 15
-#Due Date: 04/05/2019, 11:59PM
-########################################
-#
-# Name: Jessica Strait
-# Collaboration Statement:             
-# This code was completed independently with guidance from the following resources:
-# The video lectures on sorting algorithms
-########################################
-
+# Author: Jessica Strait
+# This project implements a merge sort of two lists.
 
 def merge(list1, list2):
-    #write your code here
     # First, I will create an empty list that I can append to later.
     merged_list = []
     # I will create two index checking variables that begin at zero.
@@ -41,7 +32,6 @@ def merge(list1, list2):
 
 
 def mergeSort(numList):
-    #write your code here
     if type(numList) is not list:
         return 'error'
     # Firstly, if the length of the list is zero, I should raise an error.
