@@ -1,22 +1,10 @@
-#LAB X
-#Due Date: 04/07/2019, 11:59PM
-########################################
-#                                      
-# Name: Jessica Strait
-# Collaboration Statement:             
-# This code was completed independently with guidance from the following sources:
-# The pseudocode solution provided for Lab 12
-# The video lectures about binary heaps and heap sorting
-# Assistance from TA Lawrence Lee during recitation
-# https://stackoverflow.com/questions/17911091/append-integer-to-beginning-of-list-in-python for an explanation on how
-# to insert values at the beginning of a list
-########################################
+# Author: Jessica Strait
+# This project implements my own binary heap code to create a maximum priority heap. Then, it sorts the heap into a list.
 
 
-# This is all code copied and pasted from Lab 12, with some adjustments to match the pseudocode solution in deleteMax.
+# This is all code copied and pasted from Binary-Heap.
 class MaxHeapPriorityQueue:
 
-    # Copy and paste your code from LAB 12 here
     def __init__(self):
         self.heap = []
         self.size = 0
@@ -139,10 +127,10 @@ class MaxHeapPriorityQueue:
         # We'll return the "deleted" variable that we set earlier.
         return deleted
 
+# Here is where the new code to produce a sort list begins.
 
 def heapSort(numList):
     sort_heap = MaxHeapPriorityQueue()
-    #write your code here
     # First, I'll use a quick for loop to insert each value in the list into a heap.
     for value in numList:
         sort_heap.insert(value)
