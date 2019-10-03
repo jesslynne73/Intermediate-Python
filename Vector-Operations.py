@@ -1,25 +1,10 @@
-#Lab #6
-#Due Date: 02/08/2019, 11:59PM
-########################################
-#                                      
-# Name: Jessica Strait
-# Collaboration Statement:             
-# This work was completed honestly and independently with guidance from the following sources:
-# https://stackoverflow.com/questions/51010228/what-does-other-mean-in-python to elaborate on the other function
-# https://www.dummies.com/education/math/calculus/using-scalar-multiplication-with-vectors/ for a definition of scalar
-# multiplication and other vector manipulation techniques
-# https://docs.python.org/2.0/ref/numeric-types.html for information on rmul techniques
-# Assistance from TA Lawrence Lee at recitation (in regards to the __repr__ and __str__ syntax)
-
-########################################
-
-
+# Author: Jessica Strait
+# This project supports basic vector operations: addition, subtraction, multiplication, and dot products.
 class Vector:
 
     def __init__(self, vector_list):
         self.vector = vector_list
 
-    # --- Your code starts here
     # Let's start by writing our add function. We're good at adding! We will take self and other as parameters.
     def __add__(self, other):
         # First, let's make sure the data types are vectors. If they are not, we will check for another elif condition.
