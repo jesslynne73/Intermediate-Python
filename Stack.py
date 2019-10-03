@@ -1,5 +1,5 @@
 # Author: Jessica Strait
-# This project implements the stack operation.
+# This project implements the stack data structure.
 
 class Node:
     def __init__(self, value):
