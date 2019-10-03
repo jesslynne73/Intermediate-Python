@@ -1,23 +1,10 @@
-#Lab #7
-#Due Date: 02/22/2019, 11:59PM
-########################################
-#                                      
-# Name: Jessica Strait
-# Collaboration Statement:             
-# This code was completed independently with guidance from the following sources:
-#
-########################################
+# Author: Jessica Strait
+# This project recursively creates a triangle out of stars.
 
-
-#### DO NOT modify the triangle(n) function in any way! 
 def triangle(n):
     return recursive_triangle(n, n)
 
-###################
-
-
 def recursive_triangle(x, n):
-    # --- YOUR CODE STARTS HERE
     # First we must verify that both input values are integers.
     if type(x) != int or type(n) != int:
         return 'error'
