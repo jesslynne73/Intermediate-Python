@@ -1,5 +1,6 @@
 # Author: Jessica Strait
 # This project introduces elementary class methods through a soda machine simulation.
+# Main functions include purchase, deposit, and restock
 class SodaMachine:
 
     def __init__(self, product, price):
