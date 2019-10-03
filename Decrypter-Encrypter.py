@@ -1,3 +1,6 @@
+# Author: Jessica Strait
+# This project can either take an encrypted string and a key to produce a decrypted message or a string and a desired key to produce an encrypted message.
+# It uses the Caesar cipher and can take uppercase or lowercase letters in the string.
 def encrypt(message, key):
     # Let's start with a few if statements to ensure that the message is a string, and the key is a non-zero integer
     if type(message) == str:
