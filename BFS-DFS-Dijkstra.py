@@ -1,22 +1,7 @@
-#HW 6
-#Due Date: 04/26/2019, 11:59PM
-########################################
-#
-# Name: Jessica Strait
-# Collaboration Statement:
-# This code was completed independently with guidance from the following sources:
-# Code from Labs 10 & 11
-# Review of the video lectures about BFS, DFs, and Dijkstra's algorithm
-# Review of Piazza page (particularly questions about sorting methods)
-# https://www.programiz.com/python-programming/methods/list/sort for information on the sort method
-# https://www.programiz.com/python-programming/methods/built-in/sorted for information on the reverse aspect of sorting
-# Assistance from TA Lawrence Lee
-# https://realpython.com/python-lists-tuples/ for a review on tuples and how they work
-# Use of the community-created Dijkstra doctests shared on Piazza
-########################################
-
-# ---Copy your code from labs 10 and 11 here (you can remove their comments)
-
+# Author: Jessica Strait
+# This project uses my own queue code to conduct a breadth-first sort.
+# It also uses my own stack code to conduct a depth-first sort.
+# It also runs Dijkstra's algorithm to produce a dictionary with the shortest path to each node.
 
 class StackNode:
     def __init__(self, value):
@@ -199,15 +184,13 @@ class Queue:
             # If the queue is empty, we cannot dequeue anything.
             return 'Queue is empty'
 
-#----- HW6 Graph code
-
 class Graph:
     def __init__(self, graph_repr):
         self.vertList = graph_repr
 
+# Breadth-first sort
 
     def bfs(self, start):
-        # Your code starts here
         # First, I want to check and make sure that the start variable is in the graph representation.
         if start not in self.vertList:
             return 'error'
@@ -241,6 +224,8 @@ class Graph:
                     pass
         # The return value is the visited_nodes list that we created.
         return visited_nodes
+    
+# Depth-first sort
 
     def dfs(self, start):
         # Your code starts here
@@ -278,10 +263,9 @@ class Graph:
         # Again, we will return our value list as output.
         return visited_nodes
 
-    # EXTRA CREDIT, uncomment method definition if submitting extra credit
+# Dijkstra's algorithm
 
     def dijkstra(self, start):
-        # Your code starts here
         # As with BFS and DFS, I'll run the same check on the input to make sure the start value is correct.
         if start not in self.vertList:
             return 'error'
