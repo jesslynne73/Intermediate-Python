@@ -1,5 +1,5 @@
 # Author: Jessica Strait
-# This project implements the queue operations.
+# This project implements the queue data structure.
 
 class Node:
 
