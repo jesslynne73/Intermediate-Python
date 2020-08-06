@@ -32,7 +32,7 @@ data = data[data['PROD_TYPE'] == 'STD'].copy()
 short = data[data['SHORT_LONG'] == 'SHORT']
 long = data[data['SHORT_LONG'] == 'LONG']
 
-## Calculating correlations from clinical referral indicator
+## Identify entities and prepare data for correlation analysis
 correlations = {}
 col_list = data.columns.tolist()
 remove_cols = {'CLM_NUM_CD', 'SYS_DATA_TYP_CD', 'action_text_mapped_concepts', 'PROD_TYPE', 'CLM_STATUS', 'ACNT_DURATION', 'SHORT_LONG'}
